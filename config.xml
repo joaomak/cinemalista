@@ -30,7 +30,7 @@
 
      <gap:platform name="android" />
 
-     <!--<gap:url-scheme role="None">
+     <gap:url-scheme role="None">
       <scheme>http</scheme>
       <scheme>cinemalista</scheme>
       <host>*.cinemalista.com.br</host>
@@ -41,7 +41,7 @@
     <gap:plugin name="org.li8.inappbrowser" version="0.1" />
 
 
-    <gap:plugin name="com.mcm.plugins.androidinappbilling" version="3.0.1" />-->
+    <!--<gap:plugin name="com.mcm.plugins.androidinappbilling" version="3.0.1" />-->
 
     <icon src="res/drawable-xhdpi/ic_launcher.png" />
     <icon src="res/drawable-ldpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="ldpi" />
