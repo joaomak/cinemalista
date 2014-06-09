@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8" ?>
   <widget 
     xmlns     = "http://www.w3.org/ns/widgets" 
     xmlns:cdv = "http://cordova.apache.org/ns/1.0"
@@ -43,10 +43,15 @@
 
     <gap:plugin name="com.mcm.plugins.androidinappbilling" version="3.0.1" />-->
 
+    <icon src="res/drawable-xhdpi/ic_launcher.png" />
+    <icon src="res/drawable-ldpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/drawable-mdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/drawable-hdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/drawable-xhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xhdpi" />
 
     <access origin="*" />
-    <access origin="http://www.cinemalista.com.br/*" subdomains="true" />
-    <preference name="fullscreen" value="true" />
+    <!--<access origin="http://www.cinemalista.com.br/*" subdomains="true" />
     <preference name="webviewbounce" value="true" />
     <content src="index.html" />
+    -->
 </widget>
