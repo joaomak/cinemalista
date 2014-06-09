@@ -54,23 +54,39 @@ var googleapi = {
         });
 
         return deferred.promise();
+    },
+    getinfo: function() {
+        $.post('https://accounts.google.com/o/oauth2/token', {
+                    code: code[1],
+                    client_id: options.client_id,
+                    client_secret: options.client_secret,
+                    redirect_uri: options.redirect_uri,
+                    grant_type: 'authorization_code'
+                }).done(function(data) {
+                    deferred.resolve(data);
+                }).fail(function(response) {
+                    deferred.reject(response.responseJSON);
+                });
     }
 };
 
-$(document).on('deviceready', function() {
-    var $loginButton = $('#login a');
+//$(document).on('deviceready', function() {$(document).ready();}
+
+$(document).on('ready', function() {
+    var $loginButton = $('#login');
     var $loginStatus = $('#login p');
 
     $loginButton.on('click', function() {
         googleapi.authorize({
             client_id: '828831281117.apps.googleusercontent.com',
             client_secret: 'xZrAvMkJAtFoFCU0ri3Nu7Rv',
-            redirect_uri: 'http://localhost/jm/cinemalista/site/',
+            redirect_uri: 'http://www.cinemalista.com.br/',
             scope: 'https://www.googleapis.com/auth/analytics.readonly'
         }).done(function(data) {
-            $loginStatus.html('Access Token: ' + data.access_token);
+            //$loginStatus.html('Access Token: ' + data.access_token);
+            alert( data.access_token);
         }).fail(function(data) {
-            $loginStatus.html(data.error);
+            alert(data.error);
         });
     });
 });

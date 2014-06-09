@@ -1,21 +1,109 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Google OAuth with PhoneGap</title>
-    </head>
-    <body>
-        <div class="app">
-            <div id="login">
-                <a>Sign In With Google!</a>
-                <p></p>
+<html lang="pt_BR" xmlns:og="http://ogp.me/ns#" >
+  <head>
+    <meta charset="utf-8"> 
+   
+    <title>Cinemalista</title>
+    
+
+    <meta name="description" content="Cinemalista: um lugar para encontrar e colecionar seus filmes favoritos, assim como compartilhar com seus amigos, no seu navegador ou dispositivo móvel">
+    <meta name="author" content="João Makray">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <!-- styles -->
+    <link href="css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css?1378312770" rel="stylesheet">   
+       <script src="js/prefixfree.min.js"></script>
+    
+    <!-- fav and touch icons -->
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    
+    <!-- fb likes -->
+    <meta property="og:image" content="http://www.cinemalista.com.br/img/apple-touch-icon-114x114.png" />
+    <meta property="og:url" content="http://www.cinemalista.com.br/?lang=pt" />
+    <meta property="og:title" content="Sua coleção de filmes online – Cinemalista " />
+    <meta property="og:description" content="Cinemalista: um lugar para encontrar e colecionar seus filmes favoritos, assim como compartilhar com seus amigos, no seu navegador ou dispositivo móvel" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="294843790578366" />    
+  </head>
+
+  <body id="home" class="pt">
+      
+    
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span4">
+               
             </div>
+            <div class="span4">
+               
+            </div>
+            <div class="pull-right span4" id="userinfo">
+            <a class='btn btn-danger login' id="login"><i class='icon icon-google-plus'></i> <span >Login com Google</span></a>            </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+      <div class="row-fluid">
+         
+        <div class="span12">
+            
+            <div class="well centered">
+            <h1><a href="." title="Home"><img src="img/big.png" alt="Cinemalista" /></a></h1>
+            
+<h2>Sua coleção de filmes online</h2>
+            <form class="form-search form-inline" action="." method="get">
+                <p>
+                <input type="text" class="span7" placeholder="Procure um filme" name="q" />
+                <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
+                </p>
+              </form>
+            
+<div class="row-fluid centered" >
+<h5><a href="releases.html" >Lançamentos</a></h5>
+
+
+
+</div></div>
+                
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer class="container-fluid">
+        
+        <div class="nav text-center"><a id="nav-about" href="http://www.cinemalista.com.br/about.html" ><i class="icon-bookmark"></i> Sobre</a> <a id="nav-plus" href="http://www.cinemalista.com.br/plus.html" ><i class="icon-plus-sign"></i> Planos</a> <a id="nav-support" href="http://www.cinemalista.com.br/support.html" ><i class="icon-envelope"></i> Contato/Sugestões</a> </div>
+
+     
+        </footer>
+
+    </div><!--/.fluid-container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+        <script src="js/movies.js?2"></script>    
+        <script src="js/index.js?2"></script>    
+        <script src="cordova.js"></script>    
+    
+
+  </body>
 </html>
