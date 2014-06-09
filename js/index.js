@@ -65,7 +65,7 @@ $(document).on('deviceready', function() {
         googleapi.authorize({
             client_id: '828831281117.apps.googleusercontent.com',
             client_secret: 'xZrAvMkJAtFoFCU0ri3Nu7Rv',
-            redirect_uri: 'http://localhost',
+            redirect_uri: 'http://localhost/jm/cinemalista/site/',
             scope: 'https://www.googleapis.com/auth/analytics.readonly'
         }).done(function(data) {
             $loginStatus.html('Access Token: ' + data.access_token);
