@@ -8,6 +8,24 @@
         Oktala
     </author>
 
+    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="backgroundColor" value="0xffffff" />
+
      <gap:platform name="android" />
 
      <gap:url-scheme role="None">
@@ -25,6 +43,8 @@
 
 
     <access origin="*" />
+    <access origin="http://www.cinemalista.com.br/*" subdomains="true" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+    <content src="index.html" />
 </widget>
