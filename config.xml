@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.oktala.cinemalista" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <widget 
+    xmlns     = "http://www.w3.org/ns/widgets" 
+    xmlns:cdv = "http://cordova.apache.org/ns/1.0"
+    id        = "com.oktala.cinemalista" 
+    version   = "0.1" 
+    >
+    
     <name>Cinemalista</name>
-    <description>
-       Sua coleção de filmes online
-    </description>
-    <author email="joao@joaomak.net" href="http://www.cinemalista.com.br">
-        Oktala
-    </author>
+    <description>Sua coleção de filmes online</description>
+    <author email="joao@joaomak.net" href="http://www.cinemalista.com.br">Oktala</author>
 
     <preference name="phonegap-version" value="3.3.0" />
     <preference name="permissions" value="none" />
