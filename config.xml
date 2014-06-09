@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.oktala.cinemalista" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Cinemalista</name>
+    <description>
+       Sua coleção de filmes online
+    </description>
+    <author email="joao@joaomak.net" href="http://www.cinemalista.com.br">
+        Oktala
+    </author>
+
+     <gap:platform name="android" />
+
+     <gap:url-scheme role="None">
+      <scheme>http</scheme>
+      <scheme>cinemalista</scheme>
+      <host>*.cinemalista.com.br</host>
+    </gap:url-scheme>
+
+    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
+    <gap:plugin name="org.li8.inappbrowser" version="0.1" />
+
+
+    <!--<gap:plugin name="com.mcm.plugins.androidinappbilling" version="3.0.1" />-->
+
+
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+</widget>
