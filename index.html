@@ -43,66 +43,101 @@
     <meta property="fb:app_id" content="294843790578366" />    
   </head>
 
-  <body id="home" class="pt">
-      
+  <body id="app" class="pt">
+    <div class="centered loader"><i class="icon icon-refresh icon-spin"></i></div> 
     
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid"> 
+              <form class="form-search navbar-form" action="." method="get">
+                <input type="search" class="" placeholder="Procure um filme" name="q" results="5" />
+                <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
+              </form>
+              <a id="logo" href="#"><i class='icon icon-angle-left'></i> 
+                <img src="img/logo.png" alt="Cinemalista" width="180" height="35" class="hidden-phone" /> 
+                <img src="img/icon_64.png" alt="Cinemalista" width="30" height="30" class="visible-phone" /> 
+              </a>
 
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span4">
-               
-            </div>
-            <div class="span4">
-               
-            </div>
-            <div class="pull-right span4" id="userinfo">
-            <a class='btn btn-danger login' id="login"><i class='icon icon-google-plus'></i> <span >Login com Google</span></a>            </div>
+              <div class="nav pull-right" id="userinfo">
+                
+              </div>
         </div>
-      <div class="row-fluid">
-         
-        <div class="span12">
+      </div>
+    </div>
+
+        
+        <div class="snap-drawers">
+            <div class="snap-drawer snap-drawer-left">
+
+                    <ul class="nav nav-pills nav-stacked" ><!--
+                    --><li class="nav-header" >Meus filmes</li><!--
+                    --><li><a class="dull" href="." data-tag="all" ><i class="icon-home icon-white"></i> Todos</a></li><!--
+                    --><li><a class="dull" href="." data-tag="have" ><i class="icon-star"></i> Possuo</a></li><!--
+                    --><li><a class="dull" href="." data-tag="see" ><i class="icon-eye-open"></i> Quero ver</a></li><!--
+                    --><li><a class="dull" href="." data-tag="hd" ><i class="icon-facetime-video"></i> HD</a></li><!--
+                    --><li><a class="side-nav" href="releases.html" ><i class="icon-calendar"></i> Lançamentos</a></li><!--
+                    --><li class="nav-header" >CINEMALISTA</li><!--
+                    --><li><a href="#" id="share"><i class="icon-share-sign"></i> Compartilhar</a></li><!--
+                    --><li><a id="nav-about" href="http://www.cinemalista.com.br/about.html" ><i class="icon-bookmark"></i> Sobre</a></li><!-- 
+                     --><li><a id="nav-plus" href="http://www.cinemalista.com.br/plus.html" ><i class="icon-plus-sign"></i> Planos</a> </li><!--
+                     --><li><a id="nav-support" href="http://www.cinemalista.com.br/support.html" ><i class="icon-envelope"></i> Contato/Sugestões</a> </li><!--
+                         
+                    --></ul>
+
+            </div>
+            <div class="snap-drawer snap-drawer-right">
+
+
+                 <div class="nav" id="userinfo">
+                <a class='btn btn-danger login' id="login"><i class='icon icon-google-plus'></i> <span >Login com Google</span></a>         
+
+                </div>
+
+
+            </div>
+        </div>
+        
+        <div class="snap-content" id="content">
+
+
+       
             
-            <div class="well centered">
+        <div class="centered">
+            <br><br><br>
             <h1><a href="." title="Home"><img src="img/big.png" alt="Cinemalista" /></a></h1>
             
-<h2>Sua coleção de filmes online</h2>
-            <form class="form-search form-inline" action="." method="get">
-                <p>
-                <input type="text" class="span7" placeholder="Procure um filme" name="q" />
-                <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
-                </p>
-              </form>
-            
-<div class="row-fluid centered" >
-<h5><a href="releases.html" >Lançamentos</a></h5>
+            <h2>Sua coleção de filmes online</h2>
+
+       </div>
 
 
 
-</div></div>
-                
-        </div><!--/span-->
-      </div><!--/row-->
+</div><!--/.snap-content-->
 
-      <hr>
 
-      <footer class="container-fluid">
-        
-        <div class="nav text-center"><a id="nav-about" href="http://www.cinemalista.com.br/about.html" ><i class="icon-bookmark"></i> Sobre</a> <a id="nav-plus" href="http://www.cinemalista.com.br/plus.html" ><i class="icon-plus-sign"></i> Planos</a> <a id="nav-support" href="http://www.cinemalista.com.br/support.html" ><i class="icon-envelope"></i> Contato/Sugestões</a> </div>
+<!-- Modal Login -->
+<div class="modal hide" id="modal1" >
+    <div class="modal-header">
+<h3><i class="icon-lock"></i> Entre para acessar.</h3></div><div class="modal-body">
+<p ><a class='btn btn-danger login' href=''><i class='icon icon-google-plus'></i> <span >Login com Google</span></a>  <br>ou <a href="https://accounts.google.com/SignUp" >Crie uma conta</a></p></div>
+    <div class="modal-footer">
+    <a data-dismiss="modal" class="btn">Fechar</a>
+ </div>
+</div>
 
-     
-        </footer>
-
-    </div><!--/.fluid-container-->
     
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <script type="text/javascript">domain='http://www.cinemalista.com.br/';</script>    
     <script type="text/javascript" src="js/jquery.js"></script> 
     <script src="js/bootstrap.min.js"></script>
-        <script src="js/movies.js?2"></script>    
-        <script src="js/index.js?2"></script>    
-        <script src="cordova.js"></script>    
+    <!--<script src="js/imagelightbox.min.js"></script>-->
+    <script src="cordova.js"></script>    
+    <script src="js/snap.js"></script>    
+    <script src="js/movies.min.js"></script>    
+    <script src="js/index.js"></script>    
     
 
   </body>
