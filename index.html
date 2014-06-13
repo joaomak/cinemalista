@@ -17,12 +17,12 @@
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
+      <link href="css/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
     <![endif]-->
 
     <!-- styles -->
     <link href="css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/app.css?1378312770" rel="stylesheet">   
        <script src="js/prefixfree.min.js"></script>
     
@@ -49,18 +49,21 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid"> 
+              <div class="nav pull-right" id="userinfo">
+                <img width="27" height="27" src="img/photo_95.jpg" alt="" class="img-circle">
+                <i class='icon icon-angle-right'></i> 
+              </div>
               <form class="form-search navbar-form" action="." method="get">
-                <input type="search" class="" placeholder="Procure um filme" name="q" results="5" />
-                <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
+                <div>
+                    <input type="search" class="" placeholder="Procure um filme" name="q" results="5" />
+                    <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
+                </div>
               </form>
               <a id="logo" href="#"><i class='icon icon-angle-left'></i> 
                 <img src="img/logo.png" alt="Cinemalista" width="180" height="35" class="hidden-phone" /> 
                 <img src="img/icon_64.png" alt="Cinemalista" width="30" height="30" class="visible-phone" /> 
               </a>
 
-              <div class="nav pull-right" id="userinfo">
-                
-              </div>
         </div>
       </div>
     </div>
@@ -78,9 +81,9 @@
                     --><li><a class="side-nav" href="releases.html" ><i class="icon-calendar"></i> Lançamentos</a></li><!--
                     --><li class="nav-header" >CINEMALISTA</li><!--
                     --><li><a href="#" id="share"><i class="icon-share-sign"></i> Compartilhar</a></li><!--
-                    --><li><a id="nav-about" href="http://www.cinemalista.com.br/about.html" ><i class="icon-bookmark"></i> Sobre</a></li><!-- 
-                     --><li><a id="nav-plus" href="http://www.cinemalista.com.br/plus.html" ><i class="icon-plus-sign"></i> Planos</a> </li><!--
-                     --><li><a id="nav-support" href="http://www.cinemalista.com.br/support.html" ><i class="icon-envelope"></i> Contato/Sugestões</a> </li><!--
+                    --><li><a id="nav-about" href="http://www.cinemalista.com.br/about.html" target="_blank"><i class="icon-bookmark"></i> Sobre</a></li><!-- 
+                     --><li><a id="nav-plus" href="http://www.cinemalista.com.br/plus.html" target="_blank"><i class="icon-plus-sign"></i> Planos</a> </li><!--
+                     --><li><a id="nav-support" href="http://www.cinemalista.com.br/support.html" target="_blank"><i class="icon-envelope"></i> Contato/Sugestões</a> </li><!--
                          
                     --></ul>
 
@@ -104,7 +107,7 @@
             
         <div class="centered">
             <br><br><br>
-            <h1><a href="." title="Home"><img src="img/big.png" alt="Cinemalista" /></a></h1>
+            <h1><a href="." title="Home"><img src="img/cinemalista.jpg" alt="Cinemalista" width="280" /></a></h1>
             
             <h2>Sua coleção de filmes online</h2>
 
