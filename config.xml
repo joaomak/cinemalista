@@ -36,9 +36,9 @@
       <host>*.cinemalista.com.br</host>
     </gap:url-scheme>
 
-    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+    <gap:plugin name="org.apache.cordova.network-information"  />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
-    <gap:plugin name="org.li8.inappbrowser" version="0.1" />
+    <gap:plugin name="org.li8.inappbrowser"  />
 
 
     <!--<gap:plugin name="com.mcm.plugins.androidinappbilling" version="3.0.1" />-->
