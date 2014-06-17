@@ -35,7 +35,7 @@
     
     <!-- fb likes -->
     <meta property="og:image" content="http://www.cinemalista.com.br/img/apple-touch-icon-114x114.png" />
-    <meta property="og:url" content="http://www.cinemalista.com.br/?lang=pt" />
+    <meta property="og:url" content="http://www.cinemalista.com.br/" />
     <meta property="og:title" content="Sua coleção de filmes online – Cinemalista " />
     <meta property="og:description" content="Cinemalista: um lugar para encontrar e colecionar seus filmes favoritos, assim como compartilhar com seus amigos, no seu navegador ou dispositivo móvel" />
     <meta property="og:locale" content="pt_BR" />
@@ -44,7 +44,7 @@
   </head>
 
   <body id="app" class="pt">
-    <div class="centered loader"><i class="icon icon-refresh icon-spin"></i></div> 
+    <div class="centered loader"> <img src="img/loading-spin.svg" width="64" height="64" /> </div> 
     
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -57,13 +57,12 @@
               </div>
               <form class="form-search navbar-form" action="." method="get">
                 <div>
-                    <input type="search" class="" placeholder="Procure um filme" name="q" results="5" />
+                    <input type="search" id="q" placeholder="Procure um filme" name="q" results="5" />
                     <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
                 </div>
               </form>
               <a id="logo" href="#"><i class='icon icon-angle-left'></i> 
-                <img src="img/logo.png" alt="Cinemalista" width="180" height="35" class="hidden-phone" /> 
-                <img src="img/icon_64.png" alt="Cinemalista" width="40" height="40" class="visible-phone" /> 
+                <img src="img/icon_64.png" alt="Cinemalista" width="40" height="40" /> 
               </a>
 
         </div>
@@ -73,7 +72,7 @@
         
         <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
-
+                <div id="side-menu">
                     <ul class="nav nav-pills nav-stacked" ><!--
                     --><li class="nav-header" >Meus filmes</li><!--
                     --><li><a class="dull" href="." data-tag="all" ><i class="icon-home icon-white"></i> Todos</a></li><!--
@@ -81,17 +80,20 @@
                     --><li><a class="dull" href="." data-tag="see" ><i class="icon-eye-open"></i> Quero ver</a></li><!--
                     --><li><a class="dull" href="." data-tag="hd" ><i class="icon-facetime-video"></i> HD</a></li><!--
                     --><li><a class="side-nav" href="releases.html" ><i class="icon-calendar"></i> Lançamentos</a></li><!--
-                    --><li class="nav-header" >CINEMALISTA</li><!--
-                    --><li><a href="#" id="share"><i class="icon-share-sign"></i> Compartilhar</a></li><!--
-                    --><li><a id="nav-about" href="http://www.cinemalista.com.br/about.html" target="_blank"><i class="icon-bookmark"></i> Sobre</a></li><!-- 
-                     --><li><a id="nav-plus" href="http://www.cinemalista.com.br/plus.html" target="_blank"><i class="icon-plus-sign"></i> Planos</a> </li><!--
-                     --><li><a id="nav-support" href="http://www.cinemalista.com.br/support.html" target="_blank"><i class="icon-envelope"></i> Contato/Sugestões</a> </li><!--
-                         
                     --></ul>
+                </div>
+
+                <ul class="nav nav-pills nav-stacked site-links" ><!--
+                --><li class="nav-header" >CINEMALISTA</li><!--
+                --><li><a href="#" id="share"><i class="icon-share-sign"></i> Compartilhar</a></li><!--
+                --><li><a id="nav-about" href="about.html" target="_blank"><i class="icon-bookmark"></i> Sobre</a></li><!-- 
+                 --><li><a id="nav-plus" href="plus.html" target="_blank"><i class="icon-plus-sign"></i> Planos</a> </li><!--
+                 --><li><a id="nav-support" href="support.html" target="_blank"><i class="icon-envelope"></i> Contato/Sugestões</a> </li><!--
+                     
+                --></ul>
 
             </div>
             <div class="snap-drawer snap-drawer-right">
-<div id="greet">Hi</div>
 
             </div>
         </div>
@@ -101,11 +103,19 @@
 
        
             
-            <div class="centered">
-                <br><br>
-                <h1><img src="img/cinemalista.jpg" alt="Cinemalista" width="280" /></h1>
+            <div class="centered entry">
+                <br><br><br>
+                <h1>
+                     <svg width="280" height="50"><image xlink:href="img/logo.svg" src="lib/logo.png" width="280" height="50"/></svg>
+                </h1>
                 
-                <h2>Sua coleção de filmes online</h2>
+                <h2 class="lang-pt">Sua coleção de filmes online</h2>
+                <h2 class="lang-en">Your online movie collection</h2>
+                <br><br><br>
+                <p><i class="icon-long-arrow-right"></i> 
+                    <span class="lang-pt">Deslize para mais opções</span> 
+                    <span class="lang-en">Slide to reveal options</span> 
+                </p>
 
            </div>
 
@@ -115,21 +125,28 @@
 
 
 
-<!-- Modal Login -->
-<div class="modal hide" id="modal1" >
-    <div class="modal-header">
-    <a data-dismiss="modal" class="close icon-remove"></a>
-<h3><i class="icon-lock"></i> Entre para acessar.</h3></div>
-<div class="modal-body centered">
-    <br>
-    <p ><a class='btn btn-danger login' id="login" href='#' data-dismiss="modal"><i class='icon icon-google-plus'></i> <span >Login com Google</span></a></p>
-    <p>ou <a href="https://accounts.google.com/SignUp" >Crie uma conta</a></p>
-    <br>
-</div>
-  
-</div>
+    <!-- Modal Login -->
+    <div class="modal hide" id="modal1" >
+        <div class="modal-header">
+            <a data-dismiss="modal" class="close icon-remove"></a>
+            <h3><i class="icon-lock"></i> Entre para acessar.</h3>
+        </div>
+        <div class="modal-body centered">
+            <br>
+            <p ><a class='btn btn-danger login' id="login" href='#' data-dismiss="modal"><i class='icon icon-google-plus'></i> <span >Login com Google</span></a></p>
+            <p>ou <a href="https://accounts.google.com/SignUp" >Crie uma conta</a></p>
+            <br>
+        </div>
+    </div>
 
-    
+    <!-- Modal Load -->
+    <div class="modal hide" id="modal2" >
+        <a data-dismiss="modal" class="close icon-remove"></a>
+        <div class="modal-body centered">
+        </div>
+    </div>
+
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster
