@@ -46,32 +46,13 @@
   <body id="app" class="pt">
     <div class="centered loader"> <img src="img/loading-spin.svg" width="64" height="64" /> </div> 
     
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid"> 
-              <div class="nav pull-right" id="userinfo">
-              <a data-toggle="modal" href="#modal1">
-                <img width="38" height="38" src="img/photo_95.jpg" alt="" class="img-circle">
-                <b class='icon caret'></b> 
-                </a>
-              </div>
-              <form class="form-search navbar-form" action="." method="get">
-                <div>
-                    <input type="search" id="q" data-placeholder-pt="Procure um filme" data-placeholder-en="Search for a movie" name="q" results="5" />
-                    <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
-                </div>
-              </form>
-              <a id="logo" href="#"><i class='icon icon-angle-left'></i> 
-                <img src="img/icon.png" alt="Cinemalista" width="40" height="40" /> 
-              </a>
+   
 
-        </div>
-      </div>
-    </div>
+    
+    <nav id="main-nav" class="navigation overflow">
 
-        
-        <div class="snap-drawers">
-            <div class="snap-drawer snap-drawer-left">
+
+   
                 <div id="side-menu">
                     <ul class="nav nav-pills nav-stacked" ><!--
                     --><li class="nav-header" >Meus filmes</li><!--
@@ -92,13 +73,35 @@
                      
                 --></ul>
 
-            </div>
-            <div class="snap-drawer snap-drawer-right">
+           
 
-            </div>
-        </div>
+        </nav>
         
-        <div class="snap-content" id="content">
+<div id="container">
+    <header class="navbar-header">
+              <div class="nav pull-right" id="userinfo">
+              <a data-toggle="modal" href="#modal1">
+                <img width="38" height="38" src="img/photo_95.jpg" alt="" class="img-circle">
+                <b class='icon caret'></b> 
+                </a>
+              </div>
+              <form class="form-search navbar-form" action="." method="get">
+                <div>
+                    <input type="search" id="q" data-placeholder-pt="Procure um filme" data-placeholder-en="Search for a movie" name="q" results="5" />
+                    <button class="btn btn-primary" type="submit"><i class="icon-search icon-white" ></i></button>
+                </div>
+              </form>
+              <a id="logo" href="#" >
+                <i class='icon icon-angle-left'></i> 
+                <img src="img/icon.png" alt="Cinemalista" width="40" height="40" class="open" /> 
+              </a>
+
+    </header>
+
+
+    <section id="scroller" class="overflow">
+        <div id="movie"></div>
+        <div id="content">
 
 
        
@@ -122,8 +125,8 @@
 
 
         </div><!--/.snap-content-->
-
-
+    </section>
+</div>
 
     <!-- Modal Login -->
     <div class="modal hide" id="modal1" >
@@ -156,7 +159,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!--<script src="js/imagelightbox.min.js"></script>-->
     <script src="cordova.js"></script>    
-    <script src="js/snap.min.js"></script>    
+    <script src="js/bamboo.min.js"></script>    
     <script src="js/login.min.js"></script>    
     <script src="js/movies.min.js"></script>    
     
