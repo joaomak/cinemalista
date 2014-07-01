@@ -66,7 +66,7 @@
 
                 <ul class="nav nav-pills nav-stacked site-links" ><!--
                 --><li class="nav-header" >CINEMALISTA</li><!--
-                --><li><a href="#" id="share"><i class="icon-share-sign"></i> Compartilhar</a></li><!--
+                --><li><a id="share"><i class="icon-share-sign"></i> Compartilhar</a></li><!--
                 --><li><a id="nav-about" href="about.html" target="_blank"><i class="icon-bookmark"></i> Sobre</a></li><!-- 
                  --><li><a id="nav-plus" href="plus.html" target="_blank"><i class="icon-plus-sign"></i> Planos</a> </li><!--
                  --><li><a id="nav-support" href="support.html" target="_blank" class="dull"><i class="icon-envelope"></i> Contato/Sugestões</a> </li><!--
@@ -132,12 +132,21 @@
     <div class="modal hide" id="modal1" >
         <div class="modal-header">
             <a data-dismiss="modal" class="close icon-remove"></a>
-            <h3><i class="icon-lock"></i> Entre para acessar.</h3>
+            <h3><i class="icon-lock"></i> 
+            <span class="lang-pt">Entre para acessar</span>
+            <span class="lang-en">Sign in and access</span>
+            .</h3>
         </div>
         <div class="modal-body centered">
             <br>
-            <p ><a class='btn btn-danger login' id="login" href='#' data-dismiss="modal"><i class='icon icon-google-plus'></i> <span >Login com Google</span></a></p>
-            <p>ou <a href="https://accounts.google.com/SignUp" >Crie uma conta</a></p>
+            <p ><a class='btn btn-danger login' id="login" href='#' data-dismiss="modal"><i class='icon icon-google-plus'></i> 
+            <span class="lang-pt">Login com Google</span>
+            <span class="lang-en">Login with Google</span>
+            </a></p>
+            <p>ou <a href="https://accounts.google.com/SignUp" >
+            <span class="lang-pt">Crie uma conta</span>
+            <span class="lang-en">Create an account</span>
+            </a></p>
             <br>
         </div>
     </div>
@@ -147,6 +156,18 @@
         <a data-dismiss="modal" class="close icon-remove"></a>
         <div class="modal-body centered">
         </div>
+    </div>
+
+    <!-- Modal G+ -->
+    <div id="circle-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="circle-modal" aria-hidden="true">
+      <div class="modal-header">
+        <a data-dismiss="modal" class="close icon-remove"></a>
+        <h3 class="lang-pt">Usuários cadastrados</h3>
+        <h3 class="lang-en">Registered users</h3>
+      </div>
+      <div class="modal-body">
+        <h4 class="centered loader"><i class="icon icon-refresh icon-spin"></i></h4>
+      </div>
     </div>
 
 
