@@ -511,23 +511,22 @@ h2 {
 #plus-box {
   border: 1px solid #999;
   border-radius: 8px;
-  background: white; }
+  background: #fff; }
+  #plus-box h3 i {
+    vertical-align: middle;
+    margin-top: -4px; }
+  #plus-box form {
+    margin: 0; }
 
-#plus-box h3 i {
-  vertical-align: middle;
-  margin-top: -4px; }
-
-#plus-box form {
-  margin: 0; }
+#plus-box .modal-footer a, #free-box .modal-footer a {
+  margin: 0;
+  display: block;
+  float: none; }
 
 #free-box {
   border-radius: 8px;
   border: 1px solid #ddd;
   margin-right: 2%; }
-
-#plus .modal-footer a {
-  float: none;
-  margin: 5px 0 0; }
 
 #thankyou {
   background: none; }
@@ -593,7 +592,7 @@ h2 {
     margin: 20px 0; }
 
 .alert {
-  margin: 3px 13px; }
+  margin: 6px 13px; }
 
 /********************* CLASSES *********************/
 .label {
@@ -693,6 +692,10 @@ a:hover .label {
   right: 2px; }
 
 .pt .lang-en, .en .lang-pt {
+  display: none; }
+
+#modal2 .btn-primary,
+#promo-cupom {
   display: none; }
 
 /********************* PRINT *********************/
