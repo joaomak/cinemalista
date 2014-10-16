@@ -3,14 +3,13 @@
     xmlns     = "http://www.w3.org/ns/widgets" 
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.oktala.cinemalista" 
-    version   = "1.0" 
+    version   = "1.1" 
     >
 
     <name>Cinemalista</name>
     <description>Sua coleção de filmes online</description>
     <author email="joao@joaomak.net" href="http://www.cinemalista.com.br">Oktala</author>
 
-    <preference name="phonegap-version" value="3.3.0" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
