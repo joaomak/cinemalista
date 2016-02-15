@@ -37,7 +37,7 @@
 
     <gap:plugin name="org.apache.cordova.network-information"  />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
-    <gap:plugin name="org.li8.inappbrowser"  />
+    <!--<gap:plugin name="org.li8.inappbrowser"  />-->
     <gap:plugin name="com.danielcwilson.plugins.googleanalytics" />
 
     <!--<gap:plugin name="com.mcm.plugins.androidinappbilling" version="3.0.1" />-->
